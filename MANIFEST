@@ -1,0 +1,11 @@
+Changes
+MANIFEST
+META.yml # Will be created by "make dist"
+Makefile.PL
+README
+lib/Acme/BooK/Is/My/Bitch.pm
+t/00.load.t
+t/91-version_numbers_are_the_same.t
+t/pod-coverage.t
+t/pod.t
+t/01.diagnose-me.t
