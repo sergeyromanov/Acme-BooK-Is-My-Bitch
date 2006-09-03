@@ -44,11 +44,13 @@ my %methods = (
 );
 
 for my $method ( keys %methods ) {
-    my ( $template, $theme ) = @{ $methods{$method} };
+    my ( $template, $theme, $filter ) = @{ $methods{$method} };
+    $filter ||= sub {@_};
     my $qty =()= $template =~ /%s/g;
     no strict 'refs';
-    *{$method}
-        = sub { return sprintf( $template, metaname( $theme => $qty ) ) };
+    *{$method} = sub {
+        return sprintf $template, $filter->( metaname( $theme => $qty ) );
+    };
 }
 
 sub random_quote {
