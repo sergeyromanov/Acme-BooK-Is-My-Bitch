@@ -1,4 +1,4 @@
-Acme::BooK::Is::My::Bitch version 0.01
+Acme::BooK::Is::My::Bitch version 0.02
 ======================================
 
 =head1 NAME
@@ -7,7 +7,7 @@ Acme-BooK-Is-My-Bitch - BooK is my Bitch
 
 =head1 VERSION
 
-This document describes Acme-BooK-Is-My-Bitch version 0.01.
+This document describes Acme-BooK-Is-My-Bitch version 0.02.
 
 =head1 SYNOPSIS
 
@@ -16,7 +16,7 @@ This document describes Acme-BooK-Is-My-Bitch version 0.01.
     my $book = Acme::BooK::Is::My::Bitch->new();
 
     my $quote = $book->random_quote();
-  
+
 =head1 DESCRIPTION
 
 Acme::BooK::Is::My::Bitch has a great story behind it.
@@ -46,37 +46,55 @@ Creates a new Acme::BooK::Is::My::Bitch object.
 
 BooK is really clever.
 
+    my $code_quote = $book->code();
+
 =head3 next_talk
 
 BooK is known to auto-generate the names of his lightning talks.
+
+    my $code_quote = $book->code();
 
 =head3 next_yapc
 
 BooK has something to say about the place the next YAPC::EU is going to be.
 
+    my $code_quote = $book->code();
+
 =head3 sql
 
 BooK claims he's not an SQL guru.
+
+    my $code_quote = $book->code();
 
 =head3 tell_the_truth
 
 BooK has the pornstars theme on Acme::MetaSyntactic. There must be a reason.
 
+    my $code_quote = $book->code();
+
 =head3 thats_nothing
 
 BooK has the craziest ideas ever for auctions.
+
+    my $code_quote = $book->code();
 
 =head3 twisted_perl
 
 BooK is known to write very obfuscated code.
 
+    my $code_quote = $book->code();
+
 =head3 words_of_wisdom
 
 BooK claims he got a lot of wisdom from his grandfather.
 
+    my $code_quote = $book->code();
+
 =head3 random_quote
 
 To tell you the truth, no one really knows what BooK is going to say next.
+
+    my $code_quote = $book->code();
 
 =head1 CONFIGURATION AND ENVIRONMENT
 
@@ -114,6 +132,17 @@ No bugs have been reported.
 
 Jose Castro  C<< <cog@cpan.org> >>
 
+=head1 ACKNOWLEDGEMENTS
+
+BooK actually wrote part of the code for this module and suggested
+some of the ideas that were turned into methods.
+
+This module is not about Cog mocking BooK; it's rather about Cog *and*
+BooK making fun of themselves.
+
+We spent a very funny afternoon in a mini-hackathon in Birmingham
+starting up this module. We finished its first version while at the
+Old Joint pub with some more YAPC attendees.
 
 =head1 LICENCE AND COPYRIGHT
 

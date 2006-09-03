@@ -6,7 +6,7 @@ use strict;
 
 use Acme::MetaSyntactic;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 # ###### Implementation ###########
 
@@ -20,7 +20,8 @@ sub new {
 
 my %methods = (
     'tell_the_truth' => [
-        'You know, my favorite pornstar is definitely %s.', 'pornstars', 1
+        'You know, my favorite pornstar is definitely %s.',
+        'pornstars', 1
     ],
     'thats_nothing' => [
         'Oh, that\'s nothing! You should\'ve seen what I auctioned in %s!',
@@ -28,15 +29,18 @@ my %methods = (
     ],
     'code' => [
         'You know, I wrote some code for the %s space mission, but it was rejected for its lack of clarity...',
-        'space_missions',
-        1
+        'space_missions', 1
     ],
     'next_talk' => [
         'My next lightning talk will be called "%s! %s!! %s!!!"',
         'batman', 3
     ],
-    'next_yapc' => [ 'I think the next YAPC should be on %s!', 'planets', 1 ],
-    'sql' => [ 'I think we can solve that with a %s %s %s', 'sql', 3 ],
+    'next_yapc' => [
+         'I think the next YAPC should be on %s!',
+         'planets', 1 ],
+    'sql' => [
+         'I think we can solve that with a %s %s %s',
+         'sql', 3 ],
     'twisted_perl' => [
         'I\'m pretty sure I could do that just by using %s and %s',
         'opcodes', 2
@@ -69,12 +73,6 @@ sub random_quote {
     return $self->$method();
 }
 
-# ###### Utility subs #############
-
-sub _aux {
-
-}
-
 1;    # Magic true value required at end of module
 
 __END__
@@ -85,16 +83,16 @@ Acme-BooK-Is-My-Bitch - BooK is my Bitch
 
 =head1 VERSION
 
-This document describes Acme-BooK-Is-My-Bitch version 0.01.
+This document describes Acme-BooK-Is-My-Bitch version 0.02.
 
 =head1 SYNOPSIS
 
     use Acme::BooK::Is::My::Bitch;
 
-    my $book = Acme::BooK::Is::My::Bitch->new();
+    my $bitch = Acme::BooK::Is::My::Bitch->new();
 
-    my $quote = $book->random_quote();
-  
+    my $quote = $bitch->random_quote();
+
 =head1 DESCRIPTION
 
 Acme::BooK::Is::My::Bitch has a great story behind it.
@@ -116,7 +114,7 @@ BIG MISTAKE!
 
 Creates a new Acme::BooK::Is::My::Bitch object.
 
-    my $book = Acme::BooK::Is::My::Bitch->new();
+    my $bitch = Acme::BooK::Is::My::Bitch->new();
 
 =head2 Module Interface
 
@@ -124,37 +122,55 @@ Creates a new Acme::BooK::Is::My::Bitch object.
 
 BooK is really clever.
 
+    my $code_quote = $bitch->code();
+
 =head3 next_talk
 
 BooK is known to auto-generate the names of his lightning talks.
+
+    my $next_talk_quote = $bitch->next_talk();
 
 =head3 next_yapc
 
 BooK has something to say about the place the next YAPC::EU is going to be.
 
+    my $next_yapc_quote = $bitch->next_yapc();
+
 =head3 sql
 
 BooK claims he's not an SQL guru.
+
+    my $sql_quote = $bitch->sql();
 
 =head3 tell_the_truth
 
 BooK has the pornstars theme on Acme::MetaSyntactic. There must be a reason.
 
+    my $tell_the_truth_quote = $bitch->tell_the_truth();
+
 =head3 thats_nothing
 
 BooK has the craziest ideas ever for auctions.
+
+    my $thats_nothing_quote = $bitch->thats_nothing();
 
 =head3 twisted_perl
 
 BooK is known to write very obfuscated code.
 
+    my $twisted_perl_quote = $bitch->twisted_perl();
+
 =head3 words_of_wisdom
 
 BooK claims he got a lot of wisdom from his grandfather.
 
+    my $words_of_wisdom_quote = $bitch->words_of_wisdom();
+
 =head3 random_quote
 
 To tell you the truth, no one really knows what BooK is going to say next.
+
+    my $random_quote_quote = $bitch->random_quote();
 
 =head1 CONFIGURATION AND ENVIRONMENT
 
@@ -192,6 +208,17 @@ No bugs have been reported.
 
 Jose Castro  C<< <cog@cpan.org> >>
 
+=head1 ACKNOWLEDGEMENTS
+
+BooK actually wrote part of the code for this module and suggested
+some of the ideas that were turned into methods.
+
+This module is not about Cog mocking BooK; it's rather about Cog *and*
+BooK making fun of themselves.
+
+We spent a very funny afternoon in a mini-hackathon in Birmingham
+starting up this module. We finished its first version while at the
+Old Joint pub with some more YAPC attendees.
 
 =head1 LICENCE AND COPYRIGHT
 
