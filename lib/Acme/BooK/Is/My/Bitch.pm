@@ -63,12 +63,7 @@ sub random_quote {
 
     no strict 'refs';
 
-    my @methods = (
-        grep { !/^(?:_.*|BEGIN|metaname|new)$/ }
-            keys %{"Acme::BooK::Is::My::Bitch::"}
-    );
-
-    my $method = $methods[ rand @methods ];
+    my $method  = (keys %methods)[ rand keys %methods ];
 
     return $self->$method();
 }
