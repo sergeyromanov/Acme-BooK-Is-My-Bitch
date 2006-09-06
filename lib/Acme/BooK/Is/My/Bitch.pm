@@ -21,38 +21,39 @@ sub new {
 my %methods = (
     'tell_the_truth' => [
         'You know, my favorite pornstar is definitely %s.',
-        'pornstars', 1
+        'pornstars',
     ],
     'thats_nothing' => [
         'Oh, that\'s nothing! You should\'ve seen what I auctioned in %s!',
-        'yapc', 1
+        'yapc',
     ],
     'code' => [
         'You know, I wrote some code for the %s space mission, but it was rejected for its lack of clarity...',
-        'space_missions', 1
+        'space_missions',
     ],
     'next_talk' => [
         'My next lightning talk will be called "%s! %s!! %s!!!"',
-        'batman', 3
+        'batman',
     ],
     'next_yapc' => [
          'I think the next YAPC should be on %s!',
-         'planets', 1 ],
+         'planets', ],
     'sql' => [
          'I think we can solve that with a %s %s %s',
-         'sql', 3 ],
+         'sql', ],
     'twisted_perl' => [
         'I\'m pretty sure I could do that just by using %s and %s',
-        'opcodes', 2
+        'opcodes',
     ],
     'words_of_wisdom' => [
         'My grandfather once told me: ' . join( " ", ('%s') x 7 ),
-        'loremipsum', 7
+        'loremipsum',
     ],
 );
 
 for my $method ( keys %methods ) {
-    my ( $template, $theme, $qty ) = @{ $methods{$method} };
+    my ( $template, $theme ) = @{ $methods{$method} };
+    my $qty =()= $template =~ /%s/g;
     no strict 'refs';
     *{$method}
         = sub { return sprintf( $template, metaname( $theme => $qty ) ) };
