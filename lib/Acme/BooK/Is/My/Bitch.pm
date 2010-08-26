@@ -10,13 +10,7 @@ our $VERSION = '0.02';
 
 # ###### Implementation ###########
 
-sub new {
-    my $self = shift;
-
-    my $object = {};
-
-    return bless $object, $self;
-}
+sub new { shift }
 
 my %methods = (
     'tell_the_truth' => [
