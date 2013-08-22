@@ -6,8 +6,6 @@ use strict;
 
 use Acme::MetaSyntactic;
 
-our $VERSION = '0.02';
-
 # ###### Implementation ###########
 
 sub new {
@@ -77,13 +75,7 @@ sub random_quote {
 
 __END__
 
-=head1 NAME
-
-Acme-BooK-Is-My-Bitch - BooK is my Bitch
-
-=head1 VERSION
-
-This document describes Acme-BooK-Is-My-Bitch version 0.02.
+# ABSTRACT: BooK is my Bitch
 
 =head1 SYNOPSIS
 
@@ -206,7 +198,11 @@ No bugs have been reported.
 
 =head1 AUTHOR
 
-Jose Castro  C<< <cog@cpan.org> >>
+José Castro  C<< <cog@cpan.org> >>
+
+=head1 MAINTAINER
+
+Philippe Bruhat (BooK) C<< <book@cpan.org> >>
 
 =head1 ACKNOWLEDGEMENTS
 
@@ -251,3 +247,4 @@ FAILURE OF THE SOFTWARE TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF
 SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
 SUCH DAMAGES.
 
+=cut
