@@ -88,7 +88,7 @@ Cog asked if the module had to exist by that time, and BooK said "No."
 
 BIG MISTAKE!
 
-=head1 INTERFACE 
+=head1 INTERFACE
 
 =head2 Program Interface
 
@@ -126,7 +126,7 @@ BooK claims he's not an SQL guru.
 
 =head3 tell_the_truth
 
-BooK has the pornstars theme on Acme::MetaSyntactic. There must be a reason.
+BooK has the pornstars theme on L<Acme::MetaSyntactic>. There must be a reason.
 
     my $tell_the_truth_quote = $bitch->tell_the_truth();
 
@@ -160,7 +160,7 @@ Acme-BooK-Is-My-Bitch requires no configuration files or environment variables.
 
 =head1 DEPENDENCIES
 
-=over 
+=over
 
 =item *
 
@@ -170,7 +170,7 @@ Acme::MetaSyntactic
 
 =head1 FUTURE
 
-=over 
+=over
 
 =item *
 
