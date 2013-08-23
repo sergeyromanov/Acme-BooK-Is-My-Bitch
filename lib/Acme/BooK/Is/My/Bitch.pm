@@ -27,7 +27,7 @@ my %methods = (
     ],
     'next_talk' => [
         'My next lightning talk will be called "%s! %s!! %s!!!"',
-        'batman', sub { map ucfirst, @_ }
+        'batman', sub { map { y/_/-/; ucfirst } @_ }
     ],
     'next_yapc' => [
          'I think the next YAPC should be on %s!',
