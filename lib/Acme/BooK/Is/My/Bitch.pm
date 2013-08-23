@@ -10,22 +10,24 @@ use Acme::MetaSyntactic;
 
 sub new { shift }
 
+my $de_underscore = sub { map { y/_/ /; $_ } @_ };
+
 my %methods = (
     'tell_the_truth' => [
         'You know, my favorite pornstar is definitely %s.',
-        'pornstars',
+        'pornstars', $de_underscore
     ],
     'thats_nothing' => [
         'Oh, that\'s nothing! You should\'ve seen what I auctioned in %s!',
-        'yapc',
+        'yapc', $de_underscore
     ],
     'code' => [
         'You know, I wrote some code for the %s space mission, but it was rejected for its lack of clarity...',
-        'space_missions',
+        'space_missions', $de_underscore
     ],
     'next_talk' => [
         'My next lightning talk will be called "%s! %s!! %s!!!"',
-        'batman',
+        'batman', sub { map ucfirst, @_ }
     ],
     'next_yapc' => [
          'I think the next YAPC should be on %s!',
