@@ -164,7 +164,8 @@ Acme-BooK-Is-My-Bitch requires no configuration files or environment variables.
 
 =item *
 
-Acme::MetaSyntactic
+L<Acme::MetaSyntactic>,
+L<Acme::MetaSyntactic::Themes>.
 
 =back
 
@@ -199,7 +200,7 @@ Philippe Bruhat (BooK) C<< <book@cpan.org> >>
 BooK actually wrote part of the code for this module and suggested
 some of the ideas that were turned into methods.
 
-This module is not about Cog mocking BooK; it's rather about Cog *and*
+This module is not about Cog mocking BooK; it's rather about Cog B<and>
 BooK making fun of themselves.
 
 We spent a very funny afternoon in a mini-hackathon in Birmingham
@@ -208,7 +209,7 @@ Old Joint pub with some more YAPC attendees.
 
 =head1 LICENCE AND COPYRIGHT
 
-Copyright (c) 2005, Jose Castro C<< <cog@cpan.org> >>. All rights reserved.
+Copyright (c) 2006, Jose Castro C<< <cog@cpan.org> >>. All rights reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.
