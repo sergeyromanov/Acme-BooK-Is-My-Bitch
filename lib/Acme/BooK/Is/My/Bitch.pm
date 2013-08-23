@@ -55,6 +55,8 @@ for my $method ( keys %methods ) {
     };
 }
 
+sub available_quotes { return sort keys %methods }
+
 sub random_quote {
     my $self = shift;
     my $method  = (keys %methods)[ rand keys %methods ];
@@ -97,6 +99,10 @@ BIG MISTAKE!
 Creates a new Acme::BooK::Is::My::Bitch object.
 
     my $bitch = Acme::BooK::Is::My::Bitch->new();
+
+=head3 available_quotes
+
+Returns the list of available quote methods.
 
 =head2 Module Interface
 

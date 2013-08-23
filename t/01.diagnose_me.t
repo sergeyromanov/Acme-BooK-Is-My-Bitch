@@ -10,9 +10,9 @@ isa_ok( $book, 'Acme::BooK::Is::My::Bitch' );
 
 diag( "Things that BooK could say:\n\n" );
 
-for ( grep { !/^(?:_.*|metaname|new)$/ } keys %{"Acme::BooK::Is::My::Bitch::"}     ) {
+for ( Acme::BooK::Is::My::Bitch->available_quotes, 'random_quote' ) {
     next unless defined &{"Acme::BooK::Is::My::Bitch::$_"};
     diag( '"' . $book->$_ . '"' );
 }
 
-diag( "\n\n" );
+diag( "\n" );
