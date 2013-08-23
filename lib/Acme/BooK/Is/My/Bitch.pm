@@ -207,6 +207,36 @@ We spent a very funny afternoon in a mini-hackathon in Birmingham
 starting up this module. We finished its first version while at the
 Old Joint pub with some more YAPC attendees.
 
+=head1 $_ IS MY BITCH
+
+The phrase "I<...> is my bitch" has been thrown around a lot during past
+YAPC Europe conferences. This tradition has thankfully been lost, but some
+artifacts remain:
+
+=over 4
+
+=item L<http://perl.ismybit.ch/>
+
+The T-shirt that started it all when the first YAPC Europe was organized,
+back in 2000.
+
+=item L<http://schwern.ismybit.ch/>
+
+Schwern worked for Belfast.pm, and all he got was this lousy T-shirt.
+One of those shirts was auctioned at the Amsterdam YAPC in 2001.
+
+=item L<http://greg.mccarroll.ismybit.ch/>
+
+Dave Cross bought an obfuscation by BooK at the Amsterdam YAPC auction.
+The code was revelead during the Paris YAPC auction in 2003, and the
+crowd bid (and won) against Greg to see it run.
+
+=item L<http://book.ismybit.ch/>
+
+The temporary tatoo alluded to above, at the Vienna YAPC in 2007.
+
+=back
+
 =head1 LICENCE AND COPYRIGHT
 
 Copyright (c) 2006, Jose Castro C<< <cog@cpan.org> >>. All rights reserved.
