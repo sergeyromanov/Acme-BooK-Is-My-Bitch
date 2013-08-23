@@ -57,11 +57,7 @@ for my $method ( keys %methods ) {
 
 sub random_quote {
     my $self = shift;
-
-    no strict 'refs';
-
     my $method  = (keys %methods)[ rand keys %methods ];
-
     return $self->$method();
 }
 
