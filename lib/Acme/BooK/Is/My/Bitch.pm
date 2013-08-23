@@ -185,7 +185,7 @@ None reported.
 
 =head1 BUGS AND LIMITATIONS
 
-No bugs have been reported.
+All reported bugs have been fixed, all requested features have been added.
 
 =head1 AUTHOR
 
