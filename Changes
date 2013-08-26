@@ -1,5 +1,17 @@
 Revision history for Acme-BooK-Is-My-Bitch
 
+{{$NEXT}}
+
+0.03 Mon Aug 26 2013
+        - new maintainer: Philippe Bruhat (BooK)
+        - fixed RT #21297 (BOOK)
+        - fixed RT #21298 (BOOK)
+        - fixed RT #60761 (DOLMEN)
+        - added the feature requested in RT #21307 (BOOK)
+        - incidentally also fixed RT #60762 (DOLMEN)
+        - incidentally also fixed RT #82535 (DOLMEN)
+        - added a historical note about the phrase "is my bitch"
+
 0.02  Sun Sep  3 11:40:07 2006
         - Improved documentation.
 
