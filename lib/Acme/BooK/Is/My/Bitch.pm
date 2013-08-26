@@ -100,6 +100,11 @@ Creates a new Acme::BooK::Is::My::Bitch object.
 
     my $bitch = Acme::BooK::Is::My::Bitch->new();
 
+Since all methods are actually class methods, the following line
+is exactly equivalent to the above one (and shorter!):
+
+    my $bitch = 'Acme::BooK::Is::My::Bitch';
+
 =head3 available_quotes
 
 Returns the list of available quote methods.
