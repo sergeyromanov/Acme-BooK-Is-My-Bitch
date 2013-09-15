@@ -43,6 +43,13 @@ my %methods = (
         'My grandfather once told me: ' . join( " ", ('%s') x 7 ),
         'loremipsum',
     ],
+    ( # quotes that need a theme/category
+        'baby_girl' => [
+            'You know we considered naming our baby girl %s?',
+            'pornstars/female',
+            sub { ( my $baby = shift ) =~ s/_.*$//; $baby }
+        ],
+    )x!! ( $Acme::MetaSyntactic::VERSION >= 1.011 ),
 );
 
 for my $method ( keys %methods ) {
@@ -110,6 +117,12 @@ is exactly equivalent to the above one (and shorter!):
 Returns the list of available quote methods.
 
 =head2 Module Interface
+
+=head3 baby_girl
+
+BooK has no imagination for naming his kids.
+
+    my $baby_girl_quote = $bitch->baby_girl();
 
 =head3 code
 
