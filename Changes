@@ -2,6 +2,9 @@ Revision history for Acme-BooK-Is-My-Bitch
 
 {{$NEXT}}
 
+0.04 Fri Nov 15 2013
+        - new quote from an old August 2007 patch BooK found on his disk
+
 0.03 Mon Aug 26 2013
         - new maintainer: Philippe Bruhat (BooK)
         - fixed RT #21297 (BOOK)
